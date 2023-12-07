@@ -24,7 +24,7 @@ app.get("/products/:id", (req, res) => {
   const id = Number(req.params.id);
   const product = products.find((product) => product.id === id);
   res.send({
-    products: products,
+    product: product,
   });
 });
 
